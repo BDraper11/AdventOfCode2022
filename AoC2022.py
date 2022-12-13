@@ -1,8 +1,13 @@
 import logging, sys
 import pyperclip
 
-def GetInput(w,d):
-    with open("Week"+str(w)+"\Day"+str(d)+"Input.txt") as f:
+def GetInput(d,Test = False):
+    if Test:
+        cmdStr = "Day"+str(d)+"InputTest.txt"
+    else:
+        cmdStr = "Day"+str(d)+"Input.txt"
+    
+    with open(cmdStr) as f:
         input = f.read().splitlines()
     return input
 
