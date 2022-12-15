@@ -7,7 +7,7 @@ def Puzz2(input):
     return
 
 if __name__ == "__main__":
-    input = GetInput(1,2)
+    input = GetInput(10)
     Puzz1Ans = Puzz1(input)
     print("P1Ans: ",Puzz1Ans), pyperclip.copy(Puzz1Ans)
     Puzz2Ans = Puzz2(input)
